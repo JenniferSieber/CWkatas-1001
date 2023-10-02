@@ -2,7 +2,7 @@
 // KATA 1 7kyu
 // https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c/train/javascript
 const sortByLength= array => {
-  return array.sort((a,b) => a.length - b.length)
+  return array.sort((a,b) => a.length - b.length);
 }
 
 console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]));
@@ -18,11 +18,11 @@ const mergeArrays = (a,b) => [...new Set([...a, ...b])].sort((a,b) => a - b);
 // KATA 3 7kyu
 // https://www.codewars.com/kata/5a5915b8d39ec5aa18000030/train/javascript
 const findMissing = (arr1, arr2) => {
-  arr1.sort()
-  arr2.sort()
+  arr1.sort();
+  arr2.sort();
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] != arr2[i]) {
-      return arr1[i]
+      return arr1[i];
     }
   }
 }
@@ -41,8 +41,8 @@ console.log(squareSum([0, 3, 4, 5]));
 // https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/javascript
 const firstNonConsecutive = arr => {
   for (let i = 1; i < arr.length; i++) {
-    let curr = arr[i]
-    let prev = arr[i -1]
+    let curr = arr[i];
+    let prev = arr[i -1];
 
     if (curr - prev > 1) {
       return curr;
